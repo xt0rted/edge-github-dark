@@ -1,0 +1,15 @@
+/* main */
+.issues-listing .border-left {
+    border-left: #343434 1px solid !important;
+}
+.issues-listing .border-right {
+    border-right: #343434 1px solid !important;
+}
+.issues-listing .border-bottom {
+    border-bottom: #343434 1px solid !important;
+}
+
+/* theme */
+.ace_editor .ace_identifier {
+  color: #fff !important;
+}
