@@ -1,10 +1,14 @@
 {
     "name": "GitHub Dark",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Brian Surowiec",
     "description" : "Gives GitHub a dark theme.",
     "content_scripts": [{
-        "css":["styles.css", "theme.css", "edge.css"],
+        "css": [
+            "styles.css",
+            "theme.css",
+            "edge.css"
+        ],
         "matches": [
             "*://github.com/*",
             "*://gist.github.com/*",
