@@ -1,6 +1,6 @@
 {
     "name": "GitHub Dark",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Brian Surowiec",
     "description" : "Gives GitHub a dark theme.",
     "content_scripts": [{
