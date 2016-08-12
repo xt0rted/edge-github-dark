@@ -1,5 +1,5 @@
 
-  /*! Github Dark Theme v1.14.104 (8/5/2016) *//*
+  /*! Github Dark Theme v1.14.105 (8/10/2016) *//*
  * https://github.com/StylishThemes/GitHub-Dark
  * http://userstyles.org/styles/37035
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -438,7 +438,8 @@
   .description-inline, .result-group a, .border-wrap, .select-menu-item,
   a.feed-icon, .session-device, .boxed-group-list > li.session-device:hover,
   #message-list .pagination a, #message-list .pagination .disabled,
-  .merge-status-item .merge-status-icon {
+  .merge-status-item .merge-status-icon,
+  .js-release-form .comment-form-head.tabnav {
     background: transparent !important;
   }
   .render-container.is-render-ready.is-render-requested:not(.is-render-failed),
@@ -579,7 +580,8 @@
   }
   /* darken border */
   .wiki-wrapper .wiki-empty-box:hover, .render-shell .slider .slider-track,
-  .render-shell .slider-bar, .about-menu-link:hover, .about-menu-link.selected {
+  .render-shell .slider-bar, .about-menu-link:hover, .about-menu-link.selected,
+  .pricing-table {
     border-color: #777 !important;
   }
   img, #browser table, #browser table th, #issues .menu ul li,
@@ -887,7 +889,7 @@
   .code-list .divider .blob-code, .blob-num-expandable,
   .expandable-line-num .diff-expander:hover, .select-menu-filters,
   .select-menu-modal, .pagination a, .blob-num[colspan], .build-status-item,
-  .more-branches, .plan-choice.open {
+  .more-branches, .plan-choice.open, .uploaded-files>li.delete {
     background: #1b1b1b !important;
   }
   /* headers */
@@ -1216,7 +1218,8 @@
   }
   /* invert #fff to #181818 */
   /* https://github.com/sujitpal/statlearning-notebooks/blob/master/src/chapter2.ipynb */
-  .output_area img, .ace_searchbtn, .ace_replacebtn, .network-graph-container {
+  .output_area img, .ace_searchbtn, .ace_replacebtn, .network-graph-container,
+  table.pricing-table {
     -webkit-filter: invert(90.5%) hue-rotate(180deg) saturate(200%) !important;
             filter: invert(90.5%) hue-rotate(180deg) saturate(200%) !important;
   }
@@ -1458,7 +1461,8 @@
   button.button:hover, a.button:hover, span.button:hover,
   button.minibutton:hover, a.minibutton:hover, span.minibutton:hover,
   .clone-url-button.selected > .clone-url-link,
-  .clone-url-button.selected > .clone-url-link:hover {
+  .clone-url-button.selected > .clone-url-link:hover,
+  ul#bootcamp li a:hover h4 {
     background: linear-gradient(#444, #333) !important;
     border-color: #484848 !important;
   }
@@ -1608,7 +1612,8 @@
   a.pagehead-tabs-item:hover, .tabnav-tab.selected,
   .leaflet-control-attribution, .leaflet-control-attribution a,
   .integrations-breadcrumb-link, a.integrations-breadcrumb-link, .ace_button,
-  .link-gray-dark, a.link-gray-dark, #message .title {
+  .link-gray-dark, a.link-gray-dark, #message .title, .filter-item:hover,
+  .exploregrid-item-title, .explore-collection h2, #com h1, #com h2, #com h3 {
     color: #e2e2e2 !important;
   }
   pre, body, a.social-count, span.social-count,
@@ -1680,7 +1685,8 @@
   .Box-body-row--highlight .Box-row-link, .text-pending, a.text-pending,
   .compare-pr-placeholder p, .compare-pr-placeholder .help-link,
   #message.good, #message.major, .boxed-group-success,
-  .suggester li, .alert.warning p {
+  .suggester li, .alert.warning p, ul#bootcamp li a h4, .menu-heading,
+  .text-black {
     color: #c0c0c0 !important;
   }
   button, .edit-repository-meta, .field label, .boxed-group-list li, .capped-box,
@@ -1806,7 +1812,7 @@
   .blob-num-expandable .diff-expander, .file-type-icon, .uploaded-files .remove,
   .releases-tag-list td.date a, .collaborators .collab-remove .remove-link,
   .octofication .notice-dismiss, ul.comparison-list > li .octicon,
-  div.content-header h6, .fullscreen-overlay textarea, #com h2.search-title,
+  div.content-header h6, .fullscreen-overlay textarea,
   .blob-num.non-expandable:hover, .breadcrumb,
   .application-authorizations .oauth-app-list-meta,
   .application-authorizations .oauth-app-owner, .boxed-group-inner .help,
