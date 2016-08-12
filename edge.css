@@ -9,6 +9,11 @@
     border-bottom: #343434 1px solid !important;
 }
 
+/* org name on org page */
+h1.org-name {
+    color: #fff !important;
+}
+
 /* milestone description text */
 .new-discussion-timeline .text-gray-dark {
     color: #c0c0c0 !important;
