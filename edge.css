@@ -9,9 +9,9 @@
     border-bottom: #343434 1px solid !important;
 }
 
-/* org name on org page */
-h1.org-name {
-    color: #fff !important;
+/* dialog after merging a pr */
+.merge-branch-heading {
+    color: #c0c0c0 !important;
 }
 
 /* milestone description text */
@@ -47,6 +47,17 @@ h1.org-name {
 }
 .js-repo-filter .link-gray-dark {
     color: #e2e2e2 !important;
+}
+
+/* pull request review */
+.pull-request-review-menu .border-top {
+    border-color: #343434 !important;
+}
+.pull-request-review-menu .form-actions {
+    background: #202020 !important;
+}
+.load-diff-container.bg-gray-light{
+    background: #1c1c1c !important;
 }
 
 /* main - blog */
