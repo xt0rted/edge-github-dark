@@ -19,6 +19,36 @@ h1.org-name {
     color: #c0c0c0 !important;
 }
 
+/* user profile page */
+.vcard-details.border-gray-light,
+.vcard-details + .border-top {
+    border-color: #343434 !important;
+}
+.pinned-repo-item.border-gray-dark {
+    border-color: #484848 !important;
+}
+.js-contribution-graph .border-gray-dark {
+    border-color: #484848 !important;
+}
+.profile-timeline-card.bg-white {
+    background: #181818 !important;
+}
+.profile-timeline-card.border-gray-dark {
+    border-color: #484848 !important;
+}
+.profile-timeline-card-footer.border-top {
+    border-color: #343434 !important;
+}
+.user-profile-repo-filter.border-gray-dark,
+.repo-list .border-bottom,
+.js-repo-list .border-bottom,
+.js-repo-filter .border-bottom {
+    border-color: #343434 !important;
+}
+.js-repo-filter .link-gray-dark {
+    color: #e2e2e2 !important;
+}
+
 /* main - blog */
 .border-bottom.separation {
     border-bottom: #343434 1px solid !important;
