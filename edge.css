@@ -60,6 +60,19 @@
     background: #1c1c1c !important;
 }
 
+/* pr merge dialog - by default this isn't green, but it tends to look better than nothing or grey */
+.merge-branch-form .commit-form {
+    border-color: rgb(0, 68, 17) !important;
+}
+.merge-branch-form .commit-form::before {
+    border-right-color: rgb(0, 68, 17) !important;
+}
+
+/* browser test results images as seen on https://github.com/twbs/bootstrap */
+a[href^="https://saucelabs.com"] > img {
+    background-color: #fff !important;
+}
+
 /* main - blog */
 .border-bottom.separation {
     border-bottom: #343434 1px solid !important;
