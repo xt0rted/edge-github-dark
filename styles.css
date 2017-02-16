@@ -1,5 +1,5 @@
 
-  /*! Github Dark Theme v1.16.27 (2017-02-10) *//*
+  /*! Github Dark Theme v1.17.1 (2017-02-16) *//*
  * https://github.com/StylishThemes/GitHub-Dark
  * http://userstyles.org/styles/37035
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -199,9 +199,7 @@
     outline-color: /*[[base-color]]*/ #4183c4 !important;
   }
   input.focus[type="text"], #adv_code_search .focus.search-page-label,
-  .js-chromeless-input-container.focus,
-  /* below selector has a ton of weight,
-  better to override it with
+  /* below selector has a ton of weight. Better to override it with
      class selectors that unset box-shadow and rules here. Testable
      on the repo tag editor */
   input[type="text"]:focus:not(.js-color-editor-input):not(.tree-finder-input):not(.js-site-search-focus):not(.tag-input-inner),
@@ -405,7 +403,7 @@
   .labels .label, .octotree_views .octotree_view .octotree_view_header,
   .fullscreen-overlay textarea, .avatar-child, .discussion-item .label-color,
   .coupons .coupon-form-body, .label-private, .repo-file-upload-progress,
-  .more-repos {
+  .more-repos, .header .header-search-wrapper.focus {
     box-shadow: none !important;
   }
   a, button, p, ul, li, dl.form label, .formbody label, .js-context-button,
@@ -738,11 +736,11 @@
     border: 1px solid #444 !important;
     border-bottom: 1px solid #343434 !important;
   }
-  .summary-stats, .follow-list .follow-list-item {
+  .header, .summary-stats, .follow-list .follow-list-item {
     border-bottom: 1px solid #343434 !important;
   }
   .simple-conversation-list > li, .site-footer, .blame .section-first td,
-  .wiki-list .wiki-list-item+.wiki-list-item {
+  .wiki-list .wiki-list-item + .wiki-list-item {
     border-top: 1px solid #343434 !important;
   }
   /* discussion timeline tweaks */
@@ -1225,30 +1223,25 @@
   [alt=":copyright:"], [alt=":currency_exchange:"], [alt=":top:"],
   [alt=":back:"], [alt=":zzz:"], [alt=":notes:"], [alt=":musical_score:"],
   [alt=":black_large_square:"], [alt=":black_medium_small_square:"],
-  [alt=":ant:"], [alt=":musical_note:"],
+  [alt=":ant:"], [alt=":musical_note:"], [alt=":loop:"], [alt=":feet:"],
+  [alt=":paw_prints:"],
   /* unicode */
-  [alias="soon"],
-  [alias="on"], [alias="end"], [alias="heavy_dollar_sign"], [alias="registered"],
-  [alias="tm"], [alias="heavy_multiplication_x"], [alias="heavy_plus_sign"],
+  [alias="soon"], [alias="on"],
+  [alias="end"], [alias="heavy_dollar_sign"], [alias="registered"], [alias="tm"],
+  [alias="heavy_multiplication_x"], [alias="heavy_plus_sign"],
   [alias="heavy_minus_sign"], [alias="heavy_division_sign"],
   [alias="heavy_check_mark"], [alias="arrows_clockwise"], [alias="wavy_dash"],
   [alias="curly_loop"], [alias="copyright"], [alias="currency_exchange"],
   [alias="top"], [alias="back"], [alias="zzz"], [alias="notes"],
   [alias="musical_score"], [alias="black_large_square"],
-  [alias="black_medium_small_square"], [alias="ant"], [alias="musical_note"] {
+  [alias="black_medium_small_square"], [alias="ant"], [alias="musical_note"],
+  [alias="loop"], [alias="feet"], [alias="paw_prints"] {
     -webkit-filter: invert(100%) hue-rotate(180deg) brightness(80%) !important;
             filter: invert(100%) hue-rotate(180deg) brightness(80%) !important;
     background: transparent !important;
   }
-  /* Exclude problematic non-emojis, use tools/unicode-gen.js to generate */
-  @font-face {
-    font-family: "Apple Color Emoji";
-    src: local("Apple Color Emoji");
-    unicode-range: U+00000-000A8,U+000AA-000AD,U+000AF-02121,U+02123-025A9,
-                   U+025AB-025FB,U+025FD-025FD,U+025FF-0265F,U+02661-02662,
-                   U+02664-02713,U+02715-02715,U+02717-0302F,U+03031-10FFFF;
-  }
-  /* Exclude problematic emojis, use tools/unicode-gen.js to generate */
+  /* Invert problematic emoji fallback images used on Windows */
+  /* use tools/unicode-gen.js to generate */
   g-emoji[fallback-src$="2795.png"], g-emoji[fallback-src$="2796.png"],
   g-emoji[fallback-src$="2797.png"], g-emoji[fallback-src$="27b0.png"],
   g-emoji[fallback-src$="2b1b.png"], g-emoji[fallback-src$="25fe.png"],
@@ -1257,9 +1250,19 @@
   g-emoji[fallback-src$="1f503.png"], g-emoji[fallback-src$="1f519.png"],
   g-emoji[fallback-src$="1f51a.png"], g-emoji[fallback-src$="1f51b.png"],
   g-emoji[fallback-src$="1f51c.png"], g-emoji[fallback-src$="1f51d.png"],
-  g-emoji[fallback-src$="1f3b5.png"] {
+  g-emoji[fallback-src$="1f3b5.png"], g-emoji[fallback-src$="27bf.png"],
+  g-emoji[fallback-src$="1f43e.png"], g-emoji[fallback-src$="1f43e.png"] {
     -webkit-filter: invert(83%) !important;
             filter: invert(83%) !important;
+  }
+  /* Exclude problematic non-emojis from Apple's emoji font on macOS */
+  /* use tools/unicode-gen.js to generate. */
+  @font-face {
+    font-family: "Apple Color Emoji";
+    src: local("Apple Color Emoji");
+    unicode-range: U+00000-000A8,U+000AA-000AD,U+000AF-02121,U+02123-025A9,
+                   U+025AB-025FB,U+025FD-025FD,U+025FF-0265F,U+02661-02662,
+                   U+02664-02713,U+02715-02715,U+02717-0302F,U+03031-10FFFF;
   }
   /* GeoJSON maps */
   /* https://github.com/benbalter/dc-maps/blob/master/maps/embassies.geojson */
@@ -2385,7 +2388,7 @@
   .issues-list, .pulls-list-group, .commit-tease, .branch-infobar,
   .pagehead.repohead h1 .repo-label span,
   .coupons .coupon-form-body .coupon-icon, .menu, .merge-pr-more-commits,
-  .api pre, .js-chromeless-input-container {
+  .api pre {
     border: 1px solid #484848 !important;
   }
   #graph-shots li > p, .select-menu-item, .logo-box, .branch-infobar {
@@ -2434,7 +2437,8 @@
   #user-content-toc {
     border-collapse: separate !important;
   }
-  #facebox pre, #contributors-master svg.viz, #com .dropdown-menu {
+  #facebox pre, #contributors-master svg.viz, #com .dropdown-menu,
+  .header-search-wrapper {
     border: 1px solid #343434 !important;
   }
   /* orange rss icon */
@@ -2870,6 +2874,8 @@
   .markdown-format code, body.blog pre > code, .api pre, .api code,
   .hook-delivery-details pre,
   /*[[syntax-theme]]*/
+  /*[[syntax-codemirror]]*/
+  /*[[syntax-jupyter]]*/
   /* grunt build - remove to end of file */
   /* Syntax Theme - Twilight */
   .highlight,
